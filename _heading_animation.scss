@@ -1,0 +1,82 @@
+h1 span {
+    display: inline-block;
+    margin: 0 0;
+    padding: 0;
+    letter-spacing: 0;
+}
+
+span:nth-child(3) {
+    animation: appear 0.5s;
+}
+span:nth-child(4) {
+    animation: appear 1s;
+}
+span:nth-child(5) {
+    animation: appear 1.5s;
+}
+span:nth-child(6) {
+    animation: appear 2s;
+}
+span:nth-child(7) {
+    animation: appear 2.5s;
+}
+span:nth-child(8) {
+    animation: appear 3s;
+}
+span:nth-child(9) {
+    animation: appear 3.5s;
+}
+span:nth-child(10) {
+    animation: appear 4s;
+}
+span:nth-child(11) {
+    animation: appear 4.5s;
+}
+span:nth-child(12) {
+    animation: appear 5s;
+}
+span:nth-child(13) {
+    animation: appear 5.5s;
+}
+span:nth-child(14) {
+    animation: appear 6s;
+}
+span:nth-child(15) {
+    animation: appear 6.5s;
+}
+span:nth-child(16) {
+    animation: appear 7s;
+}
+span:nth-child(17) {
+    animation: appear 7.5s;
+}
+span:nth-child(18) {
+    animation: appear 8s;
+}
+span:nth-child(19) {
+    animation: appear 8.5s;
+}
+span:nth-child(20) {
+    animation: appear 9s;
+}
+span:nth-child(21) {
+    animation: appear 9.5s;
+}
+span:nth-child(22) {
+    animation: appear 10s;
+}
+span:nth-child(23) {
+    animation: appear 10.5s;
+}
+span:nth-child(24) {
+    animation: appear 11s;
+}
+
+@keyframes appear {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+}
