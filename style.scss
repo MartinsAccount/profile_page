@@ -139,17 +139,29 @@ input[type="checkbox"] {
 
 .card_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
     .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         width: 300px;
-        height: 500px;
+        height: 400px;
+        margin: 10px 50px;
+
+        border: 1px solid black;
 
         img {
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
+            padding-top: 10px;
+        }
+
+        .card_text {
+            font-size: 20px;
+            padding: 30px 20px;
         }
     }
 }
