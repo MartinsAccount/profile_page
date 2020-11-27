@@ -52,8 +52,35 @@ html {
 
 header {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
+  position: relative;
   background-image: linear-gradient(109.6deg, #0e0b38 11.2%, #ef2525 91.1%);
+}
+
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+}
+
+.flex_container .main_text {
+  color: #f2f2f2;
+  font-size: 60px;
+}
+
+.flex_container .main_img img {
+  width: 350px;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  margin-top: 40px;
 }
 
 nav {
@@ -71,6 +98,7 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 10px 20px;
+  height: 12vh;
 }
 
 nav img {
@@ -93,7 +121,7 @@ nav ul {
 .nav_items a {
   display: inline-block;
   text-decoration: none;
-  padding: 20px;
+  padding: 22px;
   font-size: 18px;
   color: #f2f2f2;
   -webkit-transition: 0.3s;
@@ -143,5 +171,11 @@ nav ul {
 
 input[type="checkbox"] {
   display: none;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
