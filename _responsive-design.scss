@@ -1,0 +1,33 @@
+// Navbar hamburger menü
+
+@media screen and (max-width: 800px) {
+    nav {
+        ul {
+            display: none;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            span {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 4px 0;
+            }
+            input[type="checkbox"]:checked + ul {
+                display: flex;
+            }
+        }
+    }
+}
+input[type="checkbox"] {
+    display: none;
+}

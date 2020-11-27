@@ -1,1 +1,147 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+  nav label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  nav label:hover {
+    opacity: 0.8;
+  }
+  nav label span {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  nav label input[type="checkbox"]:checked + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100vw;
+  height: 70vh;
+  background-image: linear-gradient(109.6deg, #0e0b38 11.2%, #ef2525 91.1%);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+nav img {
+  width: 55px;
+  margin-right: auto;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.nav_items {
+  margin-left: 20px;
+}
+
+.nav_items a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 18px;
+  color: #f2f2f2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav_items a:hover {
+  color: #370617;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+  nav label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  nav label:hover {
+    opacity: 0.8;
+  }
+  nav label span {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  nav label input[type="checkbox"]:checked + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
