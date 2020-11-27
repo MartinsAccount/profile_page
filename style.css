@@ -200,6 +200,7 @@ h2 {
   font-size: 40px;
   color: #6a040f;
   text-align: center;
+  margin-bottom: 20vh;
 }
 
 .flex_container {
@@ -324,5 +325,28 @@ input[type="checkbox"] {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card_container .card {
+  width: 300px;
+  height: 500px;
+}
+
+.card_container .card img {
+  width: 300px;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */

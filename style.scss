@@ -27,6 +27,7 @@ h2 {
     font-size: 40px;
     color: $h2-color;
     text-align: center;
+    margin-bottom: 20vh;
 }
 
 // Main text and img
@@ -132,4 +133,23 @@ input[type="checkbox"] {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+// Services
+
+.card_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+        width: 300px;
+        height: 500px;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
 }
