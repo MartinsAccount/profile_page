@@ -24,10 +24,11 @@ header {
     background-image: $main-gradient;
 }
 h2 {
-    font-size: 40px;
+    font-size: 50px;
     color: $h2-color;
     text-align: center;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
+    margin-top: 100px;
 }
 
 // Main text and img
@@ -38,6 +39,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     height: 60vh;
+    position: relative;
 
     .main_text {
         color: #f2f2f2;
@@ -50,6 +52,27 @@ h2 {
             width: 350px;
             transform: rotate(4deg);
             margin-top: 40px;
+        }
+    }
+}
+
+.button_container {
+    display: flex;
+
+    button {
+        margin-left: 13vw;
+        padding: 20px 50px;
+        font-size: 22px;
+        border: none;
+        border-radius: 10px;
+        background-image: $second-gradient;
+        z-index: 3;
+        font-weight: 500;
+        margin-top: -50px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
         }
     }
 }
@@ -149,9 +172,23 @@ input[type="checkbox"] {
         flex-direction: column;
         width: 300px;
         height: 400px;
-        margin: 10px 50px;
+        margin: 20px 50px;
 
-        border: 1px solid black;
+        border-radius: 15%;
+        // background-image: linear-gradient(
+        //     109.6deg,
+        //     #d69f7e 11.2%,
+        //     #e6b8a2 91.1%
+        // );
+
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+            0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+            0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         img {
             width: 100px;
@@ -162,6 +199,13 @@ input[type="checkbox"] {
         .card_text {
             font-size: 20px;
             padding: 30px 20px;
+            color: #370617;
         }
     }
+}
+
+// About
+
+.about {
+    margin-top: 100px;
 }

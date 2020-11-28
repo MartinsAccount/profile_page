@@ -197,10 +197,11 @@ header {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: #6a040f;
   text-align: center;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
+  margin-top: 100px;
 }
 
 .flex_container {
@@ -215,6 +216,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
+  position: relative;
 }
 
 .flex_container .main_text {
@@ -229,6 +231,29 @@ h2 {
   -webkit-transform: rotate(4deg);
           transform: rotate(4deg);
   margin-top: 40px;
+}
+
+.button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button_container button {
+  margin-left: 13vw;
+  padding: 20px 50px;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(109.6deg, #f48c06 11.2%, #e85d04 91.1%);
+  z-index: 3;
+  font-weight: 500;
+  margin-top: -50px;
+}
+
+.button_container button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 nav {
@@ -354,8 +379,17 @@ input[type="checkbox"] {
           flex-direction: column;
   width: 300px;
   height: 400px;
-  margin: 10px 50px;
-  border: 1px solid black;
+  margin: 20px 50px;
+  border-radius: 15%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card_container .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .card_container .card img {
@@ -367,5 +401,10 @@ input[type="checkbox"] {
 .card_container .card .card_text {
   font-size: 20px;
   padding: 30px 20px;
+  color: #370617;
+}
+
+.about {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
