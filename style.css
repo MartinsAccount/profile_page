@@ -217,9 +217,9 @@ input[type="checkbox"] {
 }
 
 .main_container .main_img img {
-  width: 350px;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
+  width: 400px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
   margin-top: 40px;
 }
 
@@ -297,6 +297,61 @@ input[type="checkbox"] {
   font-size: 20px;
   padding: 30px 20px;
   color: #370617;
+}
+
+.services2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .services2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.services2 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  margin: auto;
+}
+
+.services2 .card h4 {
+  margin: 15px auto;
+}
+
+.services2 .card img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .services2 .card {
+    margin-top: 50px;
+    width: 400px;
+  }
 }
 
 .about {
