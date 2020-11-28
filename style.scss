@@ -29,6 +29,8 @@ h2 {
     text-align: center;
     margin-bottom: 10vh;
     margin-top: 100px;
+
+    text-transform: uppercase;
 }
 
 // Main text and img
@@ -69,10 +71,12 @@ h2 {
         z-index: 3;
         font-weight: 500;
         margin-top: -50px;
+        transition: 0.3s;
 
         &:hover {
             cursor: pointer;
             opacity: 0.8;
+            margin-top: -54px;
         }
     }
 }
@@ -106,14 +110,16 @@ nav {
         display: inline-block;
         text-decoration: none;
         padding: 22px;
-        font-size: 18px;
+        font-size: 20px;
 
         color: #f2f2f2;
         transition: 0.3s;
+        font-weight: 500;
 
         &:hover {
-            color: #370617;
-            font-size: 19px;
+            color: #ffba08;
+            font-size: 20px;
+            font-weight: 500;
         }
     }
 }
@@ -208,4 +214,79 @@ input[type="checkbox"] {
 
 .about {
     margin-top: 100px;
+
+    .about_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50vw;
+            height: 50vw;
+        }
+
+        .about_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50vw;
+
+            h3 {
+                margin-top: 60px;
+                font-size: 38px;
+            }
+
+            span {
+                margin: 35px;
+                width: 150px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #6a040f;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 2rem;
+                padding: 0 60px;
+            }
+        }
+    }
+}
+
+// Contact
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        padding: 10px;
+        margin: 0 100px 100px;
+        border-radius: 30px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+            0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+            0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.22);
+            background-color: #e8eaeb;
+        }
+
+        h4,
+        p {
+            margin-top: 13px;
+        }
+
+        img {
+            width: 80px;
+        }
+    }
 }
