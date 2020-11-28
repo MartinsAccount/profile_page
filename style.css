@@ -424,11 +424,19 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .about .about_container img {
   width: 50vw;
   height: 50vw;
+  z-index: 2;
+}
+
+.about .about_container .about_wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .about .about_container .about_text {
@@ -462,6 +470,7 @@ input[type="checkbox"] {
   font-size: 22px;
   line-height: 2rem;
   padding: 0 60px;
+  z-index: 2;
 }
 
 .contact_container {
