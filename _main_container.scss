@@ -15,29 +15,46 @@
         width: 400px;
 
         .main_text {
-            font-size: 10px;
+            color: #f2f2f2;
             h1 {
-                font-size: 20px;
+                font-size: 50px;
                 color: #f2f2f2;
+                margin-bottom: -5px;
+
+                background: $second-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3 {
+                font-size: 26px;
+                margin-bottom: 20px;
+                width: 500px;
+            }
+
+            p {
+                font-size: 20px;
             }
         }
 
         button {
-            display: block;
-            padding: 20px 50px;
-            font-size: 22px;
+            padding: 18px 45px;
+            font-size: 24px;
+            font-weight: 500;
             border: none;
             border-radius: 10px;
+            margin-top: 40px;
+            width: 250px;
+            color: #03071e;
 
             background-image: $second-gradient;
-            z-index: 3;
+            z-index: 5;
             font-weight: 500;
             transition: 0.3s;
 
             &:hover {
                 cursor: pointer;
-                opacity: 0.8;
-                margin-top: -5px;
+                transform: scale(1.05);
+                box-shadow: 0 0 12px 3px #6a040f;
             }
         }
     }
@@ -49,10 +66,4 @@
             margin-top: 40px;
         }
     }
-}
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }

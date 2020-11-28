@@ -30,74 +30,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.main_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60vh;
-  position: relative;
-}
-
-.main_container .main_text {
-  color: #f2f2f2;
-  font-size: 60px;
-  -webkit-animation: text_appear 2s;
-          animation: text_appear 2s;
-}
-
-.main_container .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 400px;
-}
-
-.main_container .container button {
-  display: block;
-  padding: 20px 50px;
-  font-size: 22px;
-  border: none;
-  border-radius: 10px;
-  background-image: linear-gradient(109.6deg, #f48c06 11.2%, #e85d04 91.1%);
-  z-index: 3;
-  font-weight: 500;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.main_container .container button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  margin-top: -5px;
-}
-
-.main_container .main_img img {
-  width: 350px;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
-  margin-top: 40px;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,13 +155,6 @@ input[type="checkbox"] {
   position: relative;
 }
 
-.main_container .main_text {
-  color: #f2f2f2;
-  font-size: 60px;
-  -webkit-animation: text_appear 2s;
-          animation: text_appear 2s;
-}
-
 .main_container .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,14 +169,40 @@ input[type="checkbox"] {
   width: 400px;
 }
 
+.main_container .container .main_text {
+  color: #f2f2f2;
+}
+
+.main_container .container .main_text h1 {
+  font-size: 50px;
+  color: #f2f2f2;
+  margin-bottom: -5px;
+  background: linear-gradient(109.6deg, #f48c06 11.2%, #e85d04 91.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main_container .container .main_text h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.main_container .container .main_text p {
+  font-size: 20px;
+}
+
 .main_container .container button {
-  display: block;
-  padding: 20px 50px;
-  font-size: 22px;
+  padding: 18px 45px;
+  font-size: 24px;
+  font-weight: 500;
   border: none;
   border-radius: 10px;
+  margin-top: 40px;
+  width: 250px;
+  color: #03071e;
   background-image: linear-gradient(109.6deg, #f48c06 11.2%, #e85d04 91.1%);
-  z-index: 3;
+  z-index: 5;
   font-weight: 500;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -259,8 +210,10 @@ input[type="checkbox"] {
 
 .main_container .container button:hover {
   cursor: pointer;
-  opacity: 0.8;
-  margin-top: -5px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 12px 3px #6a040f;
+          box-shadow: 0 0 12px 3px #6a040f;
 }
 
 .main_container .main_img img {
@@ -270,10 +223,28 @@ input[type="checkbox"] {
   margin-top: 40px;
 }
 
-.wave {
+.custom-shape-divider-bottom-1606581583 {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1606581583 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 235px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1606581583 .shape-fill {
+  fill: #ffffff;
 }
 
 .card_container {
