@@ -68,6 +68,7 @@ nav {
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            z-index: 10;
 
             &:hover {
                 opacity: 0.8;
@@ -79,12 +80,24 @@ nav {
                 background-color: white;
                 margin: 4px 0;
             }
-            input[type="checkbox"]:checked + ul {
-                display: flex;
-            }
         }
     }
 }
+
 input[type="checkbox"] {
     display: none;
+}
+
+input[type="checkbox"]:checked + ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0;
+    width: 100%;
+
+    background-color: #6a040f;
 }

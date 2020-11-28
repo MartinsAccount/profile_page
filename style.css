@@ -120,6 +120,7 @@ nav ul {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer;
+    z-index: 10;
   }
   nav label:hover {
     opacity: 0.8;
@@ -130,15 +131,32 @@ nav ul {
     background-color: white;
     margin: 4px 0;
   }
-  nav label input[type="checkbox"]:checked + ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 input[type="checkbox"] {
   display: none;
+}
+
+input[type="checkbox"]:checked + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #6a040f;
 }
 
 .main_container {
@@ -170,6 +188,13 @@ input[type="checkbox"] {
   width: 400px;
 }
 
+@media screen and (max-width: 550px) {
+  .main_container .container {
+    width: 300px;
+    margin: auto;
+  }
+}
+
 .main_container .container .main_text {
   color: #f2f2f2;
 }
@@ -187,6 +212,13 @@ input[type="checkbox"] {
   font-size: 26px;
   margin-bottom: 20px;
   width: 500px;
+}
+
+@media screen and (max-width: 550px) {
+  .main_container .container .main_text h3 {
+    width: 300px;
+    margin: 0px auto 20px;
+  }
 }
 
 .main_container .container .main_text p {
@@ -222,6 +254,12 @@ input[type="checkbox"] {
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
   margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .main_container .main_img {
+    display: none;
+  }
 }
 
 .custom-shape-divider-bottom-1606581583 {
@@ -298,6 +336,18 @@ input[type="checkbox"] {
   font-size: 20px;
   padding: 30px 20px;
   color: #370617;
+}
+
+@media screen and (max-width: 500px) {
+  .card_container .card .card_text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card_container .card .card_text {
+    font-size: 16px;
+  }
 }
 
 .services2 {
@@ -415,6 +465,12 @@ input[type="checkbox"] {
   }
 }
 
+@media screen and (max-width: 780px) {
+  .about .about_container .about_text {
+    margin: auto;
+  }
+}
+
 .about .about_container .about_text h3 {
   margin-top: 20px;
   font-size: 38px;
@@ -455,17 +511,6 @@ input[type="checkbox"] {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about .about_container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    width: 300px;
   }
 }
 
