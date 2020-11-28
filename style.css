@@ -373,8 +373,7 @@ input[type="checkbox"] {
 }
 
 .about .about_container img {
-  width: 50vw;
-  height: 50vw;
+  width: 400px;
   z-index: 2;
 }
 
@@ -395,11 +394,12 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50vw;
+  width: 600px;
+  margin-left: 100px;
 }
 
 .about .about_container .about_text h3 {
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 38px;
 }
 
@@ -498,6 +498,10 @@ footer img {
   margin: 0 20px;
 }
 
+footer img:hover {
+  opacity: 0.8;
+}
+
 footer > :nth-child(1) {
   font-size: 24px;
   color: #f2f2f2;
@@ -518,7 +522,7 @@ footer > :nth-child(3) {
   color: #f2f2f2;
 }
 
-footer > :nth-child(4) {
-  color: #f2f2f2;
+footer > :nth-child(3):hover {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */
