@@ -357,6 +357,9 @@ input[type="checkbox"] {
 
 .about {
   margin-top: 100px;
+  position: relative;
+  background-image: linear-gradient(109.6deg, #f39820 11.2%, #f07224 91.1%);
+  padding-top: 120px;
 }
 
 .about .about_container {
@@ -396,6 +399,7 @@ input[type="checkbox"] {
           align-items: center;
   width: 600px;
   margin-left: 100px;
+  z-index: 2;
 }
 
 .about .about_container .about_text h3 {
@@ -416,6 +420,48 @@ input[type="checkbox"] {
   line-height: 2rem;
   padding: 0 60px;
   z-index: 2;
+}
+
+.custom-shape-divider-bottom-1606595368 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1606595368 svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-bottom-1606595368 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-top-1606595743 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1606595743 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 62px;
+}
+
+.custom-shape-divider-top-1606595743 .shape-fill {
+  fill: #ffffff;
 }
 
 .contact_container {
