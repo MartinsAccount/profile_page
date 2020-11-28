@@ -1,0 +1,91 @@
+@import "variables";
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 10px 20px;
+    height: 12vh;
+
+    .left {
+        display: flex;
+        margin-right: auto;
+        align-items: center;
+
+        img {
+            width: 55px;
+        }
+        p {
+            margin-left: 20px;
+            font-size: 28px;
+            letter-spacing: -2px;
+
+            background: $second-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin-right: 50px;
+    }
+}
+
+.nav_items {
+    margin-left: 20px;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 22px;
+        font-size: 20px;
+
+        color: #f2f2f2;
+        transition: 0.3s;
+        font-weight: 500;
+
+        &:hover {
+            color: #ffba08;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+// Responsive burger menu
+
+@media screen and (max-width: 800px) {
+    nav {
+        ul {
+            display: none;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            span {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 4px 0;
+            }
+            input[type="checkbox"]:checked + ul {
+                display: flex;
+            }
+        }
+    }
+}
+input[type="checkbox"] {
+    display: none;
+}
